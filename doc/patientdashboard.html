@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Sign Up - Doctor Sahab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Afacad Flux', sans-serif;
+            background: radial-gradient(white, lightcoral);
+            color: #333;
+        }
+
+        .header {
+            background-color: #d9534f;
+            color: #ffffff;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+        }
+
+        .navtags {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .navtags:hover {
+            color: #cccccc;
+        }
+
+        .signup-section {
+            max-width: 600px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s;
+        }
+
+        .signup-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            color: #d9534f;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+            width: 100%;
+            padding: 1em;
+            margin-bottom: 1em;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #d9534f;
+            outline: none;
+        }
+
+        button[type="submit"] {
+            background-color: #d9534f;
+            color: #ffffff;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #c12e2a;
+        }
+
+        .consultation-list {
+            margin-top: 2em;
+            padding: 1em;
+            border-top: 2px solid #d9534f;
+        }
+
+        .consultation-item {
+            padding: 1em;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            margin-bottom: 1em;
+            transition: box-shadow 0.3s;
+        }
+
+        .consultation-item:hover {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Doctor Sahab</h1>
+        <nav>
+            <a href="#" class="navtags">Home</a>
+            <a href="consultation.html" class="navtags">Consultation</a>
+            <a href="#" class="navtags">About Us</a>
+            <a href="#" class="navtags">Contact</a>
+        </nav>
+    </header>
+
+    <section class="signup-section">
+        
+
+        <div class="consultation-list">
+            <h3>Available Consultations</h3>
+            <div class="consultation-item">
+                <h4>General Medicine</h4>
+                <p>Available times: 10:00 AM, 2:00 PM, 4:00 PM</p>
+            </div>
+            <div class="consultation-item">
+                <h4>Cardiology</h4>
+                <p>Available times: 11:00 AM, 3:00 PM, 5:00 PM</p>
+            </div>
+            <div class="consultation-item">
+                <h4>Pediatrics</h4>
+                <p>Available times: 9:00 AM, 1:00 PM, 3:00 PM</p>
+            </div>
+            <div class="consultation-item">
+                <h4>Dermatology</h4>
+                <p>Available times: 12:00 PM, 3:30 PM, 5:30 PM</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
